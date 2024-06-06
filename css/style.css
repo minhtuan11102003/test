@@ -1,0 +1,139 @@
+*{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 100%;
+}
+header{
+    background-color: #FFC1C8;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+header>.logo{
+    width: 15%;
+}
+header>.logo>a>img{
+    width: 100%;
+}
+header>nav{
+    width: 70%;
+}
+header>.allCart{
+    width: 15%;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+}
+header>nav>ul.nav_item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+}
+header>nav>ul.nav_item>li{
+    width: 30%;
+    margin: 10px 15px;
+}
+header>nav>ul.nav_item>li>a{
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.36px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 1220px;
+    flex-shrink: 0;
+    height: 400px;
+}
+
+.banner_small {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.banner_small>.banner_1 {
+    width: 25%;
+    margin: 0;
+}
+
+.banner_1 img {
+    width: 380px;
+}
+
+
+/* PRODUCT SALE */
+.productSale{
+    width: 1200px;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.allProductSale{
+    /* width: 100%; */
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: auto;
+    grid-gap: 20px;
+}
+.allProductSale > .productChild {
+    height: auto;
+    width: 20%;
+    position: relative;
+    margin: 10px; /* Add margin for spacing between productChild elements */
+}
+
+.imgProduct {
+    width: 100%;
+    position: relative; /* Add position relative for absolute positioning of upTo */
+}
+.imgProduct a{
+    width: 0px;
+}
+
+.imgProduct img {
+    width: 100%;
+    max-width: 260px; /* Set max-width for image responsiveness */
+    display: block; /* Remove any potential spacing issues */
+    margin: 0 auto; /* Center the image */
+}
+
+.upTo {
+    width: 20%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+}
+
+.titleProduct {
+    width: 20%;
+}
+
+.priceProduct {
+    width: 20%;
+    margin-top: 10px; /* Add margin for spacing between title and price */
+}
+
